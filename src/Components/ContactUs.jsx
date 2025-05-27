@@ -3,7 +3,12 @@ import React from 'react'
 function ContactUs() {
   return (
     <>
-            <div className=''></div>
+            <div className=''>
+
+              <input type='emial'></input>
+              <input type='number'></input>
+
+            </div>
     </>
   )
 }
