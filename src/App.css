@@ -1,38 +1,4 @@
-*{
-  /* margin:0; */
-  padding: 0;
-  box-sizing:border-box;  
-  overflow: hidden;
-}
 
-.screen {
-  position: relative;
-  width: 100vw;
-  /* height: 100vh; */
-  overflow: hidden; 
-  color: white;
-  background-attachment: fixed;
-  z-index: 50;
-}
-.screen::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: url('src/assets/Building2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -2;
-}
-
-.screen::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: -1;
-}
 #linkItems, #item{
   position: relative;
   display: inline-block;
