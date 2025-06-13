@@ -14,6 +14,7 @@ import SignUp from './Components/SignUp'
 function App() {
   return (
     <div className='screen'>
+      <HeroSection/>
     <Router>
       <Navbar/>
       <Routes>

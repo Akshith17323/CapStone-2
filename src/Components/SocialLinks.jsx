@@ -10,7 +10,9 @@ function SocialLinks() {
                 <a  href='https://in.pinterest.com/'><img className='w-10 h-10' src='src/assets/Icons/pinterest.png'/></a>
                 <a  href='https://github.com/'><img className='w-10 h-10' src='src/assets/Icons/github.png'/></a>
                 <a  href='https://www.linkedin.com/'><img className='w-10 h-10 ' src='src/assets/Icons/linkedin.png'/></a>
-                <a  href=''><img/></a>
+                <a  href='https://www.linkedin.com/'><img className='w-10 h-10 ' src='src/assets/Icons/linkedin.png'/></a>
+                <a  href='https://www.linkedin.com/'><img className='w-10 h-10 ' src='src/assets/Icons/linkedin.png'/></a>
+
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ function PropertyCard() {
   return (
     <>
     
+    
     </>
   )
 }
