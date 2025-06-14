@@ -14,7 +14,6 @@ import SignUp from './Components/SignUp'
 function App() {
   return (
     <div className='screen'>
-      <PropertyCard/>
     <Router>
       <Navbar/>
       <Routes>

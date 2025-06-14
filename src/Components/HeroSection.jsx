@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropertyCard from './PropertyCard';
 
 function HeroSection() {
   const [properties, setProperties] = useState([]);

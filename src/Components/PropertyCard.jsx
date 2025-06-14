@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PropertyCard() {
+function PropertyCard(props) {
   const property = {
     id: "PROP001",
     address: "828 Ghose Chowk, Kolkata, West Bengal 757528",
@@ -63,8 +63,8 @@ function PropertyCard() {
           <label className='font-semibold'>Price : </label>
           <p className="text-black mb-2">
             {property.listing_status === 'For Rent'
-              ? `₹${property.rental_price_inr_per_month?.toLocaleString()} / month`
-              : `₹${property.price_inr.toLocaleString()} INR`}
+              ? `₹${property.rental_price_inr_per_month} / month`
+              : `₹${property.price_inr} INR`}
           </p>
           <label className='font-semibold'>Details :</label>
           <p className="text-black mb-4">

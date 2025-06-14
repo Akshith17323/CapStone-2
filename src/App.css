@@ -1,4 +1,15 @@
-
+* {
+  /* margin: 0;  */
+  padding: 0;
+  box-sizing: border-box;
+}
+.screen{
+  background-image: url('src/assets/Building.jpg');
+  background-size: cover;
+  background-position: center;
+  margin:0;
+  overflow: hidden;
+}
 #linkItems, #item{
   position: relative;
   display: inline-block;
