@@ -7,14 +7,14 @@ import PropertyCard from './Components/PropertyCard'
 import Landing from './Components/Landing';
 import HeroSection from './Components/HeroSection';
 import PropertyDetails from './Components/PropertyDetails';
-import Properties from './Components/Properties';
+import Properties from './Components/Properties';;
 import Login from './Components/Login';
 import SignUp from './Components/SignUp'
 
 function App() {
   return (
     <div className='screen'>
-      <HeroSection/>
+      <PropertyCard/>
     <Router>
       <Navbar/>
       <Routes>
