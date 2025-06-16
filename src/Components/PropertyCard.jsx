@@ -1,7 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function PropertyCard({property}) {
-
+  const navigate = useNavigate()
     
 
   return (
@@ -26,7 +27,11 @@ function PropertyCard({property}) {
           <p className="text-black mb-4">
             {property.bedrooms} BHK , {property.floorspace_sqft} sq ft
           </p>
-          <button className="border rounded-lg text-black px-4 py-1 hover:bg-gray-100">
+          <button className="border rounded-lg text-black px-4 py-1 hover:bg-gray-100" onClick={(e)=>{
+                e.preventDefault()
+                navigate('/propertyDetails')
+              }
+              }>
             View  Details
           </button>
         </div>

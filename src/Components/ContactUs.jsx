@@ -4,40 +4,30 @@ import SocialLinks from './SocialLinks'
 
 function ContactUs() {
   return (
-    <div className="w-screen h-screen flex  items-center justify-center">
-
-      <form className='flex flex-col w-1/2 h-auto'>
-            <div className="flex justify-between gap-4 ">
-                <div className="flex flex-col w-1/2">
-                  <label htmlFor="firstname">First Name</label>
-                  <input type="text" placeholder="Your first name" id="firstname" />
-                </div>
-
-                <div className="flex flex-col w-1/2">
-                  <label htmlFor="lastname">Last Name</label>
-                  <input type="text" placeholder="Your last name" id="lastname" />
-                </div>
-            </div>
+    <div className="w-screen h-screen flex flex-col items-center ">
+      <form className='flex flex-col w-1/3 min-h-[500px] bg-slate-900 m-5 rounded-lg items-center'>
+            
+          <label for="firstname" className="mt-6">Name</label>
+          <input type="text" placeholder="Your name" id="firstname"  className='border-sky-300 rounded-lg'/>
+          
 
           <label for='mobileNumber' className='mt-6'>Mobile Number :</label>
-          <input type='tel' placeholder='Enter your number' id='mobileNumber'/>
+          <input type='tel' placeholder='Enter your number' id='mobileNumber' className='border-sky-300 rounded-lg'/>
           
           <label for='email' className='mt-6'>Email:</label>
-          <input type='eamil'placeholder='Enter your email' id='email'/>
+          <input type='eamil'placeholder='Enter your email' id='email' className='border-sky-300 rounded-lg'/>
 
           <label for='message' className='mt-6'>Message :</label>
-          <textarea type='text' placeholder='Enter your message...'/>
+          <input type='text' placeholder='Enter your message...' className='border-sky-300 rounded-lg'/>
 
-
-          <button >Reach Me...</button>
-
-          <div className="flex justify-center m-4">
-          <SocialLinks />
-          </div>
+          <button className=''
+          >Reach me</button>
 
       </form>
 
-      
+      <div className="flex justify-center m-4">
+          <SocialLinks />
+      </div>
       
     </div>
   )
