@@ -1,8 +1,13 @@
 import React from 'react'
 
+
 function Properties() {
+  
   return (
-    <div>Properties</div>
+    <div className='w-screen h-screen flex'>
+
+    
+    </div>
   )
 }
 

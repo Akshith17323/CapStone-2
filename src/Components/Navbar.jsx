@@ -12,7 +12,11 @@ function Navbar() {
             <a>Logo</a>
             <nav className='w-1/3 flex justify-between text-1.5xl text-white'>
 
-              <a id='linkItems' className='nav-animate' >Home</a>
+              <a id='linkItems' className='nav-animate' onClick={(e)=>{
+                e.preventDefault()
+                navigate('/hero')
+              }
+              }>Home</a>
               <a id='linkItems' className='nav-animate' onClick={(e)=>{
                 e.preventDefault()
                 navigate('/contactUs')

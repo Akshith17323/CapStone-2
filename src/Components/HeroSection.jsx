@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropertyCard from './PropertyCard';
+import Sidebar from './SideBar';
 
 function HeroSection() {
   const [properties, setProperties] = useState([]);
@@ -14,16 +15,18 @@ function HeroSection() {
   }, []);
 
   return (
-    <div>
-      <h1>Available Properties</h1>
-      <ul>
-        {properties.map((property) => (
-          <li key={property.id}>
-            <strong>{property.city}</strong> {property.address}<br />
-            ₹{property.price_inr.toLocaleString()}
-          </li>
-        ))}
-      </ul>
+    <div className='w-screen h-screen   '>
+      <div className='flex '>
+        <div className='w-1/5'></div>
+
+        <div className='w-4/5 flex flex-wrap gap-10 p-5'>
+          {properties.map((property) => (
+    
+              <PropertyCard property={property}/>
+          ))}
+        </div>
+      </div>
+      
     </div>
   );
 }

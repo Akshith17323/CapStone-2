@@ -4,12 +4,14 @@
   box-sizing: border-box;
   color:white 
 }
-.screen{
+.screen {
   background-image: url('src/assets/Building.jpg');
   background-size: cover;
   background-position: center;
-  margin:0;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  min-height: 100vh;   
+  width: 100%;
+  overflow-x: hidden;    
 }
 #linkItems, #item{
   position: relative;
