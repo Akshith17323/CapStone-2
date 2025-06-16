@@ -2,7 +2,7 @@ import React from 'react'
 
 function SignUp() {
   return (
-    <div>SignUp</div>
+    <div className='w-screen h-screen flex items-center justify-center'></div>
   )
 }
 

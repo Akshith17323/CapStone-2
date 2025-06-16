@@ -4,35 +4,44 @@ import SocialLinks from './SocialLinks'
 
 function ContactUs() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-100">
+    <div className="w-screen h-screen flex  items-center justify-center">
 
-      <form className='flex flex-col w-1/3 h-1/2 '>
-          <div className='flex w-'>
-            <label for="firstname" >First Name :</label>
-            <input type='text' placeholder='Enter your first name' id="firstname"/>
+      <form className='flex flex-col w-1/2 h-auto'>
+            <div className="flex justify-between gap-4 ">
+                <div className="flex flex-col w-1/2">
+                  <label htmlFor="firstname">First Name</label>
+                  <input type="text" placeholder="Your first name" id="firstname" />
+                </div>
 
-            <label for="lastname" >Last Name :</label>
-            <input type='text' placeholder='Enter your last name' id="lastname"/>
-          </div>
+                <div className="flex flex-col w-1/2">
+                  <label htmlFor="lastname">Last Name</label>
+                  <input type="text" placeholder="Your last name" id="lastname" />
+                </div>
+            </div>
 
-          <label for='mobileNumber'>Mobile Number :</label>
+          <label for='mobileNumber' className='mt-6'>Mobile Number :</label>
           <input type='tel' placeholder='Enter your number' id='mobileNumber'/>
           
-          <label for='email'>Email:</label>
+          <label for='email' className='mt-6'>Email:</label>
           <input type='eamil'placeholder='Enter your email' id='email'/>
 
-          <label for='message'>Message :</label>
+          <label for='message' className='mt-6'>Message :</label>
           <textarea type='text' placeholder='Enter your message...'/>
 
 
           <button >Reach Me...</button>
 
+          <div className="flex justify-center m-4">
+          <SocialLinks />
+          </div>
+
       </form>
 
-      <SocialLinks/>
+      
       
     </div>
   )
 }
 
 export default ContactUs
+

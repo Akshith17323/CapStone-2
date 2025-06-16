@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import ContactUs from './ContactUs'
+import { useNavigate } from 'react-router-dom'
 function Landing() {
+  const navigate = useNavigate()
   return (
     <div className='w-screen h-screen flex items-center justify-center'>
 
@@ -15,8 +17,16 @@ function Landing() {
 
 
           <div className="flex gap-4 mt-4">
-            <button className="h-10 w-20 px-6 bg-red-900 text-white rounded-lg">Sign Up</button>
-            <button className="h-10 w-20 px-6 bg-red-900 text-white rounded-lg">Login</button>
+            <button className="h-10 w-20 px-6 bg-red-900 text-white rounded-lg" onClick={(e)=>{
+              e.preventDefault()
+              navigate('/signup')
+            }
+            }>Sign Up</button>
+            <button className="h-10 w-20 px-6 bg-red-900 text-white rounded-lg" onClick={(e)=>{
+              e.preventDefault()
+              navigate('/login')
+            }
+            }>Login</button>
           </div>
 
         </div>

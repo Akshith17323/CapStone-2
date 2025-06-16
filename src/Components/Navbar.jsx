@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 function Navbar() {
   const navigate = useNavigate()
   return (
-    <div className='flex justify-center mt-2.5 p-2 position-fixed' >
+    <div className='flex justify-center mt-2.5 p-2 position-fixed ' >
       <div className=' navbar-expand w-[90vw]' >
           <div className='flex bg-slate-900 items-center justify-between  w-[90vw] h-12 p-2.5 rounded-lg logo-animate'>
             <a>Logo</a>
